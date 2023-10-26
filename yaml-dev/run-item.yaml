@@ -1,0 +1,49 @@
+stac_version: 1.0.0
+stac_extensions:
+  - https://stac-extensions.github.io/item-assets/v1.0.0/schema.json
+  - https://stac-extensions.github.io/ffrd_fema/v1.0.0/schema.json
+type: Collection
+id: collection
+title: FFRD-Pilot Project Run item
+description: Working 
+license: Apache-2.0
+extent:
+  spatial:
+    note: Use the geospatial exent recorded in the HEC-RAS model
+    bbox:
+      - - 172.9
+        - 1.3
+        - 173
+        - 1.4
+  temporal:
+    note: Use the AORC storm catalog daterange at the time of project execution
+    interval:
+      - - '1979-02-00T00:00:00Z'
+        - '2022-10-23T00:00:00Z'
+# ffrd_fema:new_field: test
+# ffrd_fema:xyz:
+#   x: 1
+#   y: 2
+#   z: 3
+# ffrd_fema:another_one:
+#   - 1
+#   - 2
+#   - 3
+assets:
+  example:
+    href: https://example.com/examples/file.xyz
+    ffrd_fema:new_field: test
+item_assets:
+  data:
+    roles:
+      - data
+    ffrd_fema:new_field: test
+summaries:
+  datetime:
+    minimum: '2015-06-23T00:00:00Z'
+    maximum: '2019-07-10T13:44:56Z'
+links:
+  - href: https://example.com/examples/collection.json
+    rel: self
+  - href: https://example.com/examples/item.json
+    rel: item
