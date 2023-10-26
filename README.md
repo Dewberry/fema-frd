@@ -1,52 +1,34 @@
-# Template Extension Specification
+# FEMA Flood Risk Data Extension Specification
 
-- **Title:** Template
-- **Identifier:** <https://stac-extensions.github.io/template/v1.0.0/schema.json>
-- **Field Name Prefix:** template
-- **Scope:** Item, Collection
+- **Title:** FEMA Flood Risk Data
+- **Identifier:** <https://https://github.com/Dewberry/fema-frd/v1.0.0/schema.json>
+- **Field Name Prefix:** fema_frd
+- **Scope:** Asset, Item, Collection, Catalog
 - **Extension [Maturity Classification](https://github.com/radiantearth/stac-spec/tree/master/extensions/README.md#extension-maturity):** Proposal
-- **Owner**: @your-gh-handles @person2
+- **Owner**: @slawler
 
-This document explains the Template Extension to the [SpatioTemporal Asset Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
-This is the place to add a short introduction.
+FEMA Flood Risk Data is (currently) and R&D effort to evaluate the suitability of useing STAC to manage data associated with probabilistic flood risk analyses in large scale, cloud based modeling campaigns.
 
 - Examples:
-  - [Item example](examples/item.json): Shows the basic usage of the extension in a STAC Item
-  - [Collection example](examples/collection.json): Shows the basic usage of the extension in a STAC Collection
-- [JSON Schema](json-schema/schema.json)
+  - [Item example](examples/item.json): *TBD* Shows the basic usage of the extension in a STAC Item
+  - [Collection example](examples/collection.json): *TBD* Shows the basic usage of the extension in a STAC Collection
+- [JSON Schema](json-schema/schema.json) *TBD*
 - [Changelog](./CHANGELOG.md)
 
-## Fields
+## Item Fields
 
-The fields in the table below can be used in these parts of STAC documents:
-
-- [ ] Catalogs
-- [x] Collections
-- [x] Item Properties (incl. Summaries in Collections)
-- [x] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
-- [ ] Links
 
 | Field Name           | Type                      | Description                                  |
 | -------------------- | ------------------------- | -------------------------------------------- |
-| template:new_field   | string                    | **REQUIRED**. Describe the required field... |
-| template:xyz         | [XYZ Object](#xyz-object) | Describe the field...                        |
-| template:another_one | \[number]                 | Describe the field...                        |
+| fema_frd:tbd         | tbd                       | **REQUIRED**. tbd |
+| fema_frd:tbd         | tbd                       | tbd                        |
+| fema_frd:tbd         | tbd                       | tbd                        |
 
 ### Additional Field Information
 
-#### template:new_field
+#### fema_frd:tbd
 
-This is a much more detailed description of the field `template:new_field`...
-
-### XYZ Object
-
-This is the introduction for the purpose and the content of the XYZ Object...
-
-| Field Name | Type   | Description                                  |
-| ---------- | ------ | -------------------------------------------- |
-| x          | number | **REQUIRED**. Describe the required field... |
-| y          | number | **REQUIRED**. Describe the required field... |
-| z          | number | **REQUIRED**. Describe the required field... |
+This is a much more detailed description of the field `fema_frd:tbd`...
 
 ## Relation types
 
